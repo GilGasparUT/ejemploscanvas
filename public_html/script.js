@@ -42,3 +42,30 @@
 		 	
 		}
 
+/*CREACION DE CUADRADOS*/
+
+            const canvas = document.getElementById("lienzo");
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle ="yellow";
+            ctx.lineWidth=1;
+            ctx.fillRect(100, 100, 300, 300);
+            ctx.strokeRect(100, 100, 300, 300);
+
+
+
+            const kanvas = document.getElementById("lienzo");
+            const agg = kanvas.getContext("2d");
+            agg.fillStyle ="white";
+            agg.lineWidth=1;
+            agg.fillRect(125, 125, 250, 250);
+            agg.strokeRect(125, 125, 250, 250);
+
+
+
+            const qanvas = document.getElementById("lienzo");
+            const agil = qanvas.getContext("2d");
+            agil.fillStyle ="green";
+            agil.lineWidth=1;
+            agil.fillRect(175, 175, 150, 150);
+            agil.strokeRect(175, 175, 150, 150);
+            agil.clearRect(175, 175, 150, 150);
