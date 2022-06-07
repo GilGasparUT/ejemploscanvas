@@ -69,3 +69,38 @@
             agil.fillRect(175, 175, 150, 150);
             agil.strokeRect(175, 175, 150, 150);
             agil.clearRect(175, 175, 150, 150);
+
+
+
+            
+
+            /*DIBUJANDO FIGURAS GEOMETRICAS*/
+
+        const rectangulo = document.getElementById("geometricas");
+        var rect= rectangulo.getContext("2d");
+        rectangulo.style.background='pink';
+        rect.fillStyle ="yellow";
+    
+        rect.rect(130,20, 200, 100);
+        rect.fill();       
+    
+
+        const circulo = document.getElementById("geometricas");
+        var circ= circulo.getContext("2d");
+        circ.fillStyle ="white";
+        circ.beginPath();
+        circ.arc(230,400, 80, 0, 2*Math.PI);
+        circ.fill();       
+
+
+    
+        const triangulo = document.getElementById("geometricas");
+        var trian= triangulo.getContext("2d");
+        trian.fillStyle ="purple";
+        trian.beginPath();
+        
+        trian.moveTo(150, 50);
+        trian.lineTo(50,250);
+        trian.lineTo(250,250);
+        trian.fill() 
+    
